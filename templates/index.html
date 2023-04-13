@@ -1,0 +1,121 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>JRMedic</title>
+</head>
+<body>
+    <section>
+        <h2>Diagnostico de enfemedades</h2>
+    </section>
+    <section class="diagnostico">
+        <section class="contenedor_sintomas">
+            <h3>¿Que sintomas presenta el paciente?</h3>
+            <form class="sintomas">
+                <label>
+                    <input type="checkbox" name="s1[]" value="Fiebre">
+                    Fiebre
+                </label>
+                <label>
+                    <input type="checkbox" name="s2[]" value="s2">
+                    Dolor de cabeza
+                </label>
+                <label>
+                    <input type="checkbox" name="s3[]" value="s3">
+                    Tos
+                </label>
+                <label>
+                    <input type="checkbox" name="s4[]" value="s4">
+                    Dolor muscular
+                </label>
+                <label >
+                    <input type="checkbox" name="s5[]" value="s5">
+                    Fatiga
+                </label>
+                <label>
+                    <input type="checkbox" name = "s6" value = "">
+                    Congestión nasal
+                </label>
+                <label>
+                    <input type="checkbox" name = "s7" value = "">
+                    Dolor de garganta
+                </label>
+                <label>
+                    <input type="checkbox" name = "s8" value = "">
+                    Dolor de pecho
+                </label>
+                <label>
+                    <input type="checkbox" name = "s9" value = "">
+                    Sudoración
+                </label>
+                <label>
+                    <input type="checkbox" name = "s10" value = "">
+                    Dolor abdominal
+                </label>
+                <label>
+                    <input type="checkbox" name = "s11" value = "">
+                    Diarrea
+                </label>
+                <label>
+                    <input type="checkbox" name = "s12" value = "">
+                    Perdida de peso
+                </label>
+                <label>
+                    <input type="checkbox" name = "s13" value = "">
+                    Sed excesiva
+                </label>
+                <label>
+                    <input type="checkbox" name = "s14" value = "">
+                    Micción frecuente
+                </label>
+                <label>
+                    <input type="checkbox" name = "s15" value = "">
+                    Visión borrosa
+                </label>
+                <label>
+                    <input type="checkbox" name = "s16" value = "">
+                    Anemia
+                </label>
+                <label>
+                    <input type="checkbox" name = "s17" value = "">
+                    Erupción cutánea
+                </label>
+                <label>
+                    <input type="checkbox" name = "s18" value = "">
+                    Picazón
+                </label>
+                <label>
+                    <input type="checkbox" name = "s19" value = "">
+                    Heridas que tardan de sanar
+                </label>
+                <label>
+                    <input type="checkbox" name = "s20" value = "">
+                    Sangrado rectal
+                </label>
+                <input type="submit" value="Diagnosticar enfermedad">
+            </form>
+        </section>
+        <section class="reporte">
+            <h3>Reporte de diagnostico</h3>
+            <p>Sintomas que presenta el paciente</p>
+            <ul>
+                <li>sintoma 1</li>
+                <li>sintoma 2</li>
+                <li>sintoma 3</li>
+                <li>sintoma 4</li>
+                <li>sintoma 5</li>
+                <li>sintoma 6</li>
+                <li>sintoma 7</li>
+                <li>sintoma 8</li>
+            </ul>
+            <br>
+            <p>Enfermedad que tiene el paciente: </p>
+        </section>
+    </section>
+    
+</body>
+</html>
