@@ -1,5 +1,20 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from pyswip import Prolog
+
+prolog = Prolog()
+prolog.consult('./prolog/sintomas.pl')
+
+prolog.assertz("tiene(s10)")
+prolog.assertz("tiene(s11)")
+prolog.assertz("tiene(s12)")
+prolog.assertz("tiene(s5)")
+prolog.assertz("tiene(s1)")
+prolog.assertz("tiene(s20)")
+
+for resultado in prolog.query("enfermedad(X)"):
+    print(resultado["X"])
+    print(resultado)
 
 def hola(request):
     return HttpResponse("Hola mundo!")

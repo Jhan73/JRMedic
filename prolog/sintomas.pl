@@ -19,12 +19,13 @@
 %s18 : picazón
 %s19 : heridas que tardan sanar
 %s20 : sangrado rectal
-tiene(s10).
-tiene(s11).
-tiene(s12).
-tiene(s5).
-tiene(s1).
-tiene(s20).
+
+%tiene(s10).
+%tiene(s11).
+%tiene(s12).
+%tiene(s5).
+%tiene(s1).
+%tiene(s20).
 
 %Gripe: fiebre, tos, dolor de cabeza, dolor muscular, fatiga, congestión nasal y dolor de garganta
 enfermedad('Gripe'):-tiene(s1),tiene(s3),tiene(s2),tiene(s4),tiene(s5),tiene(s6),tiene(s7).
