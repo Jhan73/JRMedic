@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #1b7d63;
+}
+
+.diagnostico{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+.contenedor_sintomas{
+    background: #9fe8d4;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 500px;
+    padding: 10px;
+}
+.contenedor_sintomas h3{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.sintomas{
+    width: 500px;
+    padding: 10px;
+    column-count: 2;
+    column-gap: 20px;
+}
+.sintomas label{
+    display: block;
+}
+.btn{
+    padding: 5px 10px;
+    display: flex;
+    margin: 10px auto;
+    border: none;
+    box-shadow: 2px 2px 4px #768984;
+    border-radius: 5px;
+    background: #0a9f77;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.reporte{
+    background: #cff8ec;
+    width: 400px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 10px 20px;
+}
+.reporte h3{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.reporte ul{
+    margin: 10px 20px;
+}
+
+.btn:active{
+    box-shadow: none;
+}
